@@ -6,7 +6,7 @@ class Program
     static void Main()
     {
         int proby = 0;
-        string longText = "Jestem Adam";
+        string longText = "Your text";
         bool dalej = true;
         var watch = System.Diagnostics.Stopwatch.StartNew();
         while (dalej)
