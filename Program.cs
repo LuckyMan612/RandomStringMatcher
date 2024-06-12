@@ -6,13 +6,14 @@ class Program
     static void Main()
     {
         int proby = 0;
-        string longText = "Your text";
+        Console.WriteLine("Write your words.");
+        string longText = Console.ReadLine();
         bool dalej = true;
         var watch = System.Diagnostics.Stopwatch.StartNew();
         while (dalej)
         {
             string randomString = GenerateRandomString(longText.Length);
-            Console.WriteLine(randomString);
+            Console.WriteLine(randomString + $" | {proby}");
             proby++;
             if (randomString == longText)
             {
